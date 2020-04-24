@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>News</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<h3>List of News Articles</h3>
+ <ion-content>
+  <!-- api read from external http and outputs the data on the screen -->
+  <!-- tried to get a galway news in relation to the app but was unsuccessful-->
+  <ion-card *ngFor="let article of articles">
+    <!-- takes the image and outputs it on screen for articles shown -->
+    <img src="{{article.urlToImage}}" />
+    <ion-card-header>
+      <!-- reads the title of the article and outputs on the screen -->
+      <ion-card-subtitle>{{article.title}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <!--Gives an article description-->
+      {{article.description}}
+      <!-- displays a link if the user wants to see the article -->
+      <ion-button href="{{article.url}}"></ion-button>
+    </ion-card-content>
+  </ion-card> 
+
+</ion-content>

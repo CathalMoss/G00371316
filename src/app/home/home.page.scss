@@ -17,9 +17,33 @@
   font-size: 16px;
   line-height: 22px;
 
-  color: #8c8c8c;
+  color: #db3333;
 
   margin: 0;
+}
+
+
+
+.ion-background-color{
+  --ion-background-color: #b0c4de;
+}
+
+.ion-text-center	{
+  text-align: center
+}
+
+.ion-text-start {
+  color: #db3333; 
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.ion-text-start2{
+ color: #0c0450;
+}
+ion-content {
+  --background: #ccc url("/assets/images/mainpage.jpg") no-repeat center center / cover;
+  background-size: cover;
 }
 
 #container a {

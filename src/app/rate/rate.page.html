@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Rate
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<!--A radio group, asking you to rate the app-->
+<ion-content>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="rate">
+      <ion-list-header>
+
+        <ion-label class="ion-text-start">
+          Go Ahead and tell us what you think!
+        </ion-label>
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label>Excellent</ion-label>
+        <ion-radio value="Excellent"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Good</ion-label>
+        <ion-radio value="Good"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Mediocre</ion-label>
+        <ion-radio value="Mediocre"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Bad</ion-label>
+        <ion-radio value="Bad"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Shocking</ion-label>
+        <ion-radio value="Shocking"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <!--Save button stores data clicked -->
+  <ion-button (click)="onSave()">Save</ion-button>
+</ion-content>

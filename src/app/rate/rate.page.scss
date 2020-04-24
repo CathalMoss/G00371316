@@ -1,0 +1,15 @@
+ion-content {
+    --background: #ccc url("/assets/images/bluerate.jpg") no-repeat center center / cover;
+    background-size: cover;
+  }
+
+  .ion-hide	{
+    display: none;
+  }
+
+  .ion-text-start {
+    color: #630909; 
+    font-size: 16px;
+    line-height: 22px;
+    font-family: sans-serif;
+  }

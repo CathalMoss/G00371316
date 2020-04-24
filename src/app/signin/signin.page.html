@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Sign Up</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--Format SignIn-->
+  <br><br><br><br><br><br>
+  <div class="ion-text-center">
+    <!--User Enters their first name and it is stored using ngModel-->
+    <ion-text><b>First Name:</b></ion-text>
+    <ion-input [(ngModel)]="name" placeholder="Enter your first name"></ion-input>
+    <br>
+
+    <!--User Enters their surname and it is stored using ngModel-->
+    <ion-text><b>Surname:</b></ion-text>
+    <ion-input [(ngModel)]="surname" placeholder="Enter your surname"></ion-input>
+    <br>
+
+    <!--User Enters their email and it is stored using ngModel-->
+    <ion-text><b>Email:</b></ion-text>
+    <ion-input [(ngModel)]="email" placeholder="Enter your student email"></ion-input>
+    <br>
+
+    <!--All are saved on click method-->
+    <ion-button color="secondary" (click)="onSave()">Save</ion-button>
+    <br>
+    <!--Can access profile without going back to main menu-->
+    <ion-button color="secondary" [routerLink]="['/profile']">Go to your Profile</ion-button>
+    <br>
+  </div>
+</ion-content>

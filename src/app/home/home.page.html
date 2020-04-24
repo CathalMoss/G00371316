@@ -1,20 +1,53 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      GMIT Student App
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <!--CSS for centering text -->
+  <div class="ion-text-center">
+    <!--Logo for GMIT -->
+    <img width="475" height="250" position="absolute" src="../assets/images/gmit3.png">
+    <br>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <br>
+    <!--Link to Sign In Page -->
+    <ion-button color="dark" [routerLink]="['/signin']">Sign In</ion-button>
+
+    <br>
+    <!--Link to Profile Page -->
+    <ion-button color="dark" [routerLink]="['/profile']">Student Profile</ion-button>
+
+    <br>
+    <!--API section -->
+    <ion-button color="dark" [routerLink]="['/news']">API</ion-button>
+
+    <br>
+    <!--Flashlight option -->
+    <ion-button color="dark" (click)="lightMethod()">Flashlight</ion-button>
+
+    <br>
+    <!--Informatiion about GMIT -->
+    <ion-button color="dark" [routerLink]="['/info']">About Us</ion-button>
+    <br>
+    <!--Geolocation option -->
+    <ion-button color="dark" (click)="locationMethod()">My Location</ion-button>
+    <br>
+    <!--Display the latitute and longitute co-ordinations -->
+    <ion-text class = "ion-text-start2"><b>{{lat}} {{long}}</b></ion-text>
+
+    <br>
+    <!--An extra button to rate the app -->
+    <ion-button color="danger" [routerLink]="['/rate']">Rate My App</ion-button>
+    <br>
+    <!--Then Displays option chosen below -->
+    <ion-text class ="ion-text-start"><b>You have rated this app: {{rate}}</b></ion-text>
+
+    <br>
+    <!--GMIT sketch -->
+    <img width="400" height="250" src="../assets/images/gmit1.png">
   </div>
 </ion-content>

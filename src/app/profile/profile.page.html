@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      My Profile
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="ion-text-center">
+    <b>
+      <br>
+      <img width="450" height="300" src="../assets/images/profile1.png"><br>
+      <br>
+      <h3>
+        <!--data entered in the sign up page is then submitted here-->
+        <ion-text>{{firstname}}</ion-text>
+        <br>
+        <br>
+        <ion-text>{{surname}}</ion-text>
+        <br>
+        <br>
+        <ion-text>{{email}}</ion-text>
+      </h3>
+      <br>
+      <br>
+      <br>
+      <!--Can view timetables of the year-->
+      <ion-text>Semester 1: Timetable</ion-text>
+      <br>
+      <img width="500" height="500" src="../assets/images/timetable1.jpg"><br>
+
+      <br>
+      <br>
+      <br>
+      <ion-text>Semester 2: Timetable</ion-text>
+      <br>
+      <img width="500" height="500" src="../assets/images/timetable2.jpg">
+    </b>
+  </div>
+</ion-content>

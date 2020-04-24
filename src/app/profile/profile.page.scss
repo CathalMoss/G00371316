@@ -1,0 +1,20 @@
+ion-content {
+    --background: #ccc url("/assets/images/profile.jpg") no-repeat center center / cover;
+    background-size: cover;
+  }
+
+  .ion-text-center	{
+    text-align: center
+  }
+
+  .text{
+    width: 70%;
+    margin: auto;
+   }
+
+   .ion-text-start {
+    color: #db3333; 
+    font-size: 16px;
+    line-height: 22px;
+    font-family: "Helvetica Neue";
+  }
